@@ -1,3 +1,5 @@
+# The Dirichlet Mechanism
+
 This is the official code associated with the following paper:
 
 > Donlapark Ponnoprat (2022). Dirichlet Mechanism for Differentially Private KL Divergence Minimization. Transactions on Machine Learning Research.
