@@ -27,7 +27,7 @@ X_train, X_test, y_train, y_test = prepare_labeled_data("experiments/data/Adult.
                                                         num_bins=10,
                                                         seed=seed)
 
-# Create a new sampler with (epsilon, lambda)-RDP. One of 
+# Create a new sampler with (epsilon, lambda)-RDP. Currently, we have:
 # 1. DirichletMechanism
 # 2. GaussianMechanism
 # 3. LaplaceMechanism
@@ -55,7 +55,7 @@ To compute the log-likelihood on the test data, we have to fit an MLE model (no 
 <hr>
 
 ```
-# Define a Bayesian networks. The values are parents.
+# Define a Bayesian networks. The keys are nodes, and the values are associated parents.
 adult_net = {"age": [],
              "sex": [],
              "education": ["age"],
@@ -70,7 +70,7 @@ X_train, X_test = prepare_data("experiments/data/Adult.csv",
                                num_bins=10,
                                seed=seed)
 
-# Create a new sampler with (epsilon, lambda)-RDP. One of 
+# Create a new sampler with (epsilon, lambda)-RDP. Currently, we have:
 # 1. DirichletMechanism
 # 2. GaussianMechanism
 # 3. LaplaceMechanism
