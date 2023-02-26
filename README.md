@@ -61,7 +61,7 @@ from samplers import (DirichletMechanism,
                       GaussianMechanism,
                       LaplaceMechanism,
                       MLECalculator)
-from utils import prepare_data
+from utils import loglikelihood, prepare_data
 
 seed = 1
 
