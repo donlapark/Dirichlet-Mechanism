@@ -23,7 +23,7 @@ seed = 1
 
 
 # Discretize continuous attributes and split the data, missing values allowed
-# The label must be in the last column.
+# The label must be in the last column of the data file.
 X_train, X_test, y_train, y_test = prepare_labeled_data("experiments/data/Adult.csv",
                                                         test_size=0.3,
                                                         num_bins=10,
