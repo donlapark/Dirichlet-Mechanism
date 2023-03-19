@@ -1,5 +1,10 @@
 # The Dirichlet Mechanism
 
+[![License](https://img.shields.io/github/license/Donlapark/Dirichlet-Mechanism)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.7_|_3.8-blue.svg)
+[![CodeQL](https://github.com/donlapark/Dirichlet-Mechanism/actions/workflows/codeql.yml/badge.svg)](https://github.com/donlapark/Dirichlet-Mechanism/actions/workflows/codeql.yml)
+![Maintenance](https://img.shields.io/maintenance/yes/2023)
+
 This is the official code associated with the following paper:
 
 > Donlapark Ponnoprat (2022). Dirichlet Mechanism for Differentially Private KL Divergence Minimization. Transactions on Machine Learning Research.
