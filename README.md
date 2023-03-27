@@ -9,7 +9,16 @@ This is the official code associated with the following paper:
 
 > Donlapark Ponnoprat (2022). Dirichlet Mechanism for Differentially Private KL Divergence Minimization. Transactions on Machine Learning Research.
 
-The code provides two private models:
+This is a simple implementation of differentially private Naïve Bayes classification and differentially private Bayesian network.
+- Flexible options for the underlying private mechanism, namely the Gaussian mechanism, Laplace mechanism, or Dirichlet mechanism.
+- Preprocessing pipeline that can take data with non-numeric features and missing values.
+
+## Installation
+
+1. Install the latest version of `numpy`, `scipy`, `pandas` and `sklearn`.
+2. Place `models.py`, `samplers.py` and `utils.py` in the working directory.
+
+## Usage
 
 **1. Differentially Private Naïve Bayes Algorithm**
 
