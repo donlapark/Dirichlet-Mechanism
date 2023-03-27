@@ -9,7 +9,7 @@ This is the official code associated with the following paper:
 
 > Donlapark Ponnoprat (2022). Dirichlet Mechanism for Differentially Private KL Divergence Minimization. Transactions on Machine Learning Research.
 
-The code provided two private models:
+The code provides two private models:
 
 **1. Differentially Private Naïve Bayes Algorithm**
 
@@ -106,16 +106,16 @@ dpbn.fit(X_train)
 # by fitting an MLE model (specifying MLE_calc 
 # as the sampler)
 MLE_calc = MLECalculator(prior=0.1)
-dp = DPBayesianNetwork(bayesian_net=adult_net,
-                       sampler=MLE_calc,
-                       random_state=seed)
+mlebn = DPBayesianNetwork(bayesian_net=adult_net,
+                          sampler=MLE_calc,
+                          random_state=seed)
 
 # Fit the MLE model and obtain test counts
-dp.fit(X_test)
+mlebn.fit(X_test)
 
 # Compute the log-likelihood on the test set
 # using the test counts and private parameters
-ll = loglikelihood(dp.count_dict, dpbn.param_dict)
+ll = loglikelihood(mlebn.count_dict, dpbn.param_dict)
 ```
 
 <hr>
